@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/loginTitleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="40dp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/loginTitlePText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="P'"-->
+<!--                android:textSize="40dp"-->
+<!--                android:textColor="@color/deepgray"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/loginTitleLanText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="lanner"-->
+<!--                app:layout_constraintLeft_toLeftOf="@id/loginTitlePText"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="@color/deepgray"/>-->
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/loginIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toBottomOf="@id/loginTitleLayout"
+            android:hint="id"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+        <EditText
+            android:id="@+id/loginPwEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toBottomOf="@id/loginIdEditText"
+            android:hint="pw"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/loginJoinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            app:layout_constraintTop_toBottomOf="@id/loginPwEditText"
+            app:layout_constraintLeft_toLeftOf="@id/loginPwEditText"
+            />
+
+        <TextView
+            android:id="@+id/loginFindIdOrPwText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find id/pw"
+            app:layout_constraintTop_toBottomOf="@id/loginPwEditText"
+            app:layout_constraintRight_toRightOf="@id/loginPwEditText"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toBottomOf="@id/loginJoinText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_loginbutton_box"
+            android:textSize="20dp"
+            android:text="login"
+            android:textColor="@color/white"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
